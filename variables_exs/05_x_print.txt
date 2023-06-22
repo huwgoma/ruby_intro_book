@@ -1,0 +1,19 @@
+x = 0
+3.times do
+  x += 1
+end
+puts x
+
+x should print 3 and return nil.
+
+
+y = 0
+3.times do
+  y += 1
+  x = y
+end
+puts x
+
+Attempting to access x should return an undefined local variable error.
+Since 3.times involves a method call (Integer#times), the do...end pair is a block.
+x is defined within the block, and therefore cannot be accessed outside it.

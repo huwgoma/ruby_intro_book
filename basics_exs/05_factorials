@@ -1,0 +1,9 @@
+numbers = [1, 2, 3, 4, 5, 6, 7, 8]
+
+numbers.each do |n|
+  f = 1
+  n.downto(1) do |i| 
+    f = f*i
+  end
+  puts "Number: #{n} -> Factorial: #{f}"
+end

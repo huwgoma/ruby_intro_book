@@ -1,0 +1,11 @@
+SyntaxError: (irb):2: syntax error, unexpected ')', expecting '}'
+ from /usr/local/rvm/rubies/ruby-2.5.3/bin/irb:16:in `<main>'
+
+1) We are currently in the IRB shell.
+2) There is a syntax error on line 2:
+    - The interpreter was expecting a closing curly brace }, 
+      but it encountered a closing rounded bracket ) instead.  
+    - There was an opening curly bracket { that is unclosed.
+  
+eg. animals = { cat: 'meow',
+                dog: 'woof' )
